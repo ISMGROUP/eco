@@ -8,8 +8,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9ha&__jcf^(f6x=bvkv5=1lifh4x^##x4$)j4ij=z8@@b&&(va'
 
 # Debug settings
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Installed apps
 INSTALLED_APPS = [
